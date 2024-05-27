@@ -9,9 +9,20 @@ res.send("hello express js");
 app.get("/home",function(req,res){
 res.send("home page");
 });
-app.get("/about",function(req,res){
+
+app.post("/about",function(req,res){
 res.send("about page");
 });
+
+app.put("/terms",function(req,res){
+res.send("about page");
+});
+
+app.delete("/terms",function(req,res){
+res.send("about page");
+});
+
+
 
 app.listen(8000,function(){
 console.log("watever");
